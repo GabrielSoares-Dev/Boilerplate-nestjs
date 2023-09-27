@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+  boilerplate-nestjs:
+    container_name: boilerplate-nestjs
+    build: 
+     context: .
+    restart: always
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - node-modules-boilerplate-nestjs:/app/node_modules
+    networks:
+      - boilerplate-nestjs-network
+volumes:
+  node-modules-boilerplate-nestjs:
+    name: node-modules-boilerplate-nestjs
+networks:
+  boilerplate-nestjs-network:
+    name: boilerplate-nestjs-network
+    driver: bridge
