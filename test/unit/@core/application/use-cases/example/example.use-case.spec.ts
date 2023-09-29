@@ -1,3 +1,3 @@
-import { ExampleUseCase } from '@application/use-cases'
+import { ExampleUseCase } from '@application/use-cases';
 
-describe('ExampleUseCase', () => {})
+describe('ExampleUseCase', () => {});

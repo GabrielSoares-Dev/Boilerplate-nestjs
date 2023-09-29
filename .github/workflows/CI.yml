@@ -15,14 +15,14 @@ jobs:
         with:
           node-version: '16.x'
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci
       - name: Checking types
-        run: pnpm tsc --noEmit
+        run: npm tsc --noEmit
       - name: Format code
-        run: pnpm run format
+        run: npm run format
       - name: Verify errors eslint
-        run: pnpm run lint
+        run: npm run lint
       - name: Running tests
-        run: pnpm run test
+        run: npm run test
       - name: Coverage
-        run: pnpm run test:cov
+        run: npm run test:cov
