@@ -73,7 +73,16 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "collectCoverageFrom": [
-      "**/*.(t|j)s"
+      "**/*.(t|j)s",
+      "!dist/**",
+      "!coverage/**",
+      "!src/**/index.ts",
+      "!src/**/*module*.ts",
+      "!commitlint.config.js",
+      "!.eslintrc.js",
+      "!src/main.ts",
+      "!**/*.spec.ts",
+      "!**/*.e2e-spec.ts"
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",
