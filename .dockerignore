@@ -4,5 +4,4 @@ dist
 .env*
 Dockerfile
 Dockerfile.production
-package-lock.json
 .vscode
